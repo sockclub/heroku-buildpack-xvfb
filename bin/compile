@@ -17,4 +17,4 @@ ln -s /app/.apt/usr/share/fonts $1/usr-s-fonts
 # run mkfontdir with binaries from inside dyno
 export PATH="$PATH:$1/.apt/usr/bin"
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$1/.apt/usr/lib:$1/.apt/usr/lib/x86_64-linux-gnu"
-find $1/.apt/usr/share/fonts/X11 -type d | xargs $1/.apt/usr/bin/mkfontdir
+# find $1/.apt/usr/share/fonts/X11 -type d | xargs $1/.apt/usr/bin/mkfontdir
